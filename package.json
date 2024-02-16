@@ -1,0 +1,21 @@
+{
+  "name": "task-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.36.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.71.0",
+    "sass-loader": "^10.5.2",
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
