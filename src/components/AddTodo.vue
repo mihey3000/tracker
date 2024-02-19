@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="onSubmit">
     <input type="text" v-model="title" />
-    <button :disabled="isInputEmpty" type="submit" class="btn">Create</button>
+    <button type="submit" class="btn">Create</button>
   </form>
 </template>
 
@@ -10,8 +10,6 @@ import { computed, ref } from "vue";
 export default {
   setup(props, { emit }) {
     const title = ref("");
-
-    const isInputEmpty = computed(() => !title.value.length > 0);
 
     function onSubmit() {
       if (title.value.trim()) {
@@ -25,7 +23,7 @@ export default {
       }
     }
 
-    return { title, onSubmit, isInputEmpty };
+    return { title, onSubmit };
   },
 };
 </script>
@@ -37,6 +35,6 @@ form {
 }
 
 input {
-  width: 250px;
+  width: 370px;
 }
 </style>

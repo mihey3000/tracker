@@ -63,6 +63,7 @@ export default {
 
 .counter {
   padding-right: 5px;
+  color: grey;
 }
 
 span {
